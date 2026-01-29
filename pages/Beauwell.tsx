@@ -44,7 +44,7 @@ export const Beauwell: React.FC = () => {
 
       <div ref={introRef} className={`max-w-4xl mx-auto px-6 py-16 text-center transition-all duration-1000 delay-500 transform ${introVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
          <p className="text-gray-700 text-xl font-normal leading-relaxed">
-           Discover our curated selection of premium wellness products. We proudly partner with global leaders 
+           Discover our curated selection of premium wellness products. We at BEAUWELL have proudly partner with Nu Skin and PharmaNex 
            to bring you the finest in science and nature.
          </p>
          <div className={`h-0.5 bg-beauwell-sage mx-auto mt-8 transition-all duration-1000 delay-700 ${introVisible ? 'w-16 opacity-100' : 'w-0 opacity-0'}`}></div>
