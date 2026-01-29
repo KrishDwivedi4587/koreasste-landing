@@ -99,7 +99,7 @@ export const About: React.FC = () => {
                 <FadeInSection delay="200ms">
                   <div className="relative group overflow-hidden shadow-lg">
                       <img 
-                          src="public/beauwell/AboutImage.jpg" 
+                          src="/beauwell/AboutImage.jpg" 
                           alt="Wellness Science" 
                           className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
                       />
