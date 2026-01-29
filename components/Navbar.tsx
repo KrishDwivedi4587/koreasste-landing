@@ -31,9 +31,18 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           
-          {/* Logo */}
-          <Link to="/" className={`text-3xl font-serif tracking-wider font-bold ${brandColor} transition-colors`}>
-            KOREASSTE
+          {/* Logo & Brand Name */}
+          <Link to="/" className="flex items-center space-x-4 group">
+            <div className="w-14 h-14 md:w-16 md:h-16 overflow-hidden rounded-full border border-gray-200 shadow-sm flex-shrink-0 transition-transform duration-300">
+              <img 
+                src="/lifestyle/KoreassteLogo.png" 
+                alt="Koreasste Logo" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <span className={`text-2xl md:text-3xl font-serif tracking-[0.1em] font-bold ${brandColor} transition-colors`}>
+              KOREASSTE
+            </span>
           </Link>
 
           {/* Desktop Nav */}
