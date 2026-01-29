@@ -4,33 +4,33 @@ import { Product } from '../types';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const fashionJewelry: Product[] = [
-  { id: 'j1', name: 'Amethyst Stud Earrings', category: 'Jewelry', image: 'public/lifestyle/Earrings.jpg', description: 'Raw purple stones in golden settings' },
-  { id: 'j2', name: 'Statement Necklace', category: 'Jewelry', image: 'public/lifestyle/FullSet.jpg', description: 'A bold statement piece for evening wear.' },
-  { id: 'j3', name: 'Minimalist Cuff', category: 'Jewelry', image: 'public/lifestyle/bracelet.jpeg', description: 'Sleek geometric design for everyday elegance.' },
-  { id: 'j4', name: 'Vibrant Full Sets', category: 'Jewelry', image: 'public/lifestyle/TiffanyBlue.jpg', description: 'Exquisite Full Sets to steal the evening spotlight.' },
+  { id: 'j1', name: 'Amethyst Stud Earrings', category: 'Jewelry', image: '/lifestyle/Earrings.jpg', description: 'Raw purple stones in golden settings' },
+  { id: 'j2', name: 'Statement Necklace', category: 'Jewelry', image: '/lifestyle/FullSet.jpg', description: 'A bold statement piece for evening wear.' },
+  { id: 'j3', name: 'Minimalist Cuff', category: 'Jewelry', image: '/lifestyle/bracelet.jpeg', description: 'Sleek geometric design for everyday elegance.' },
+  { id: 'j4', name: 'Vibrant Full Sets', category: 'Jewelry', image: '/lifestyle/TiffanyBlue.jpg', description: 'Exquisite Full Sets to steal the evening spotlight.' },
 ];
 
 const accessories: Product[] = [
-  { id: 'a1', name: 'Cashmere Fringe Scarf', category: 'Accessories', image: 'public/lifestyle/FringedScarf.jpg', description: 'Luxurious camel cashmere wrap with elegant fringed edges.' },
-  { id: 'a2', name: 'Leather Clutch', category: 'Accessories', image: 'public/lifestyle/LeatherClutch.png', description: 'Vegetable black leather with gold hardware.' },
-  { id: 'a3', name: 'Cashmere Wrap', category: 'Accessories', image: 'public/lifestyle/CashmereWrap.jpg', description: 'Soft, warm, and incredibly light.' },
-  { id: 'a4', name: 'Statement Belt', category: 'Accessories', image: 'public/lifestyle/StatementBelt.jpg', description: 'An eye catching piece to complement your outfit.' },
+  { id: 'a1', name: 'Cashmere Fringe Scarf', category: 'Accessories', image: '/lifestyle/FringedScarf.jpg', description: 'Luxurious camel cashmere wrap with elegant fringed edges.' },
+  { id: 'a2', name: 'Leather Clutch', category: 'Accessories', image: '/lifestyle/LeatherClutch.png', description: 'Vegetable black leather with gold hardware.' },
+  { id: 'a3', name: 'Cashmere Wrap', category: 'Accessories', image: '/lifestyle/CashmereWrap.jpg', description: 'Soft, warm, and incredibly light.' },
+  { id: 'a4', name: 'Statement Belt', category: 'Accessories', image: '/lifestyle/StatementBelt.jpg', description: 'An eye catching piece to complement your outfit.' },
 ];
 
 
 const indianWear: Product[] = [
-  { id: 'i1', name: 'Embroidered Saree', category: 'Indian', image: 'public/lifestyle/EmbroideredSaree.jpg', description: 'Hand-loomed with zari borders.' },
-  { id: 'i2', name: 'Anarkali Suit', category: 'Indian', image: 'public/lifestyle/AnarkaliSuit.jpg', description: 'Flowing silhouette with intricate thread work.' },
-  { id: 'i3', name: 'Fusion Kurti', category: 'Indian', image: 'public/lifestyle/FusionKurti.jpg', description: 'Modern cut suitable for office or casual outings.' },
-  { id: 'i4', name: 'Bridal Lehenga', category: 'Indian', image: 'public/lifestyle/BridalLehenga.jpg', description: 'Heavy embroidery for the special day.' },
+  { id: 'i1', name: 'Embroidered Saree', category: 'Indian', image: '/lifestyle/EmbroideredSaree.jpg', description: 'Hand-loomed with zari borders.' },
+  { id: 'i2', name: 'Anarkali Suit', category: 'Indian', image: '/lifestyle/AnarkaliSuit.jpg', description: 'Flowing silhouette with intricate thread work.' },
+  { id: 'i3', name: 'Fusion Kurti', category: 'Indian', image: '/lifestyle/FusionKurti.jpg', description: 'Modern cut suitable for office or casual outings.' },
+  { id: 'i4', name: 'Bridal Lehenga', category: 'Indian', image: '/lifestyle/BridalLehenga.jpg', description: 'Heavy embroidery for the special day.' },
 ];
 
 
 const westernWear: Product[] = [
-  { id: 'w1', name: 'Linen Summer Blazer', category: 'Western', image: 'public/lifestyle/LinenSummerBlazer.jpg', description: 'Breathable fabric perfect for warm days.' },
-  { id: 'w2', name: 'Tailored Trousers', category: 'Western', image: 'public/lifestyle/TailoredTrousers.jpg', description: 'High-waisted cut with a modern silhouette.' },
-  { id: 'w3', name: 'Evening Gown', category: 'Western', image: 'public/lifestyle/EveningGown.jpg', description: 'Floor-length dress in midnight blue.' },
-  { id: 'w4', name: 'Structured Coat', category: 'Western', image: 'public/lifestyle/StructuredCoat.jpg', description: 'Wool blend coat for winter elegance.' },
+  { id: 'w1', name: 'Linen Summer Blazer', category: 'Western', image: '/lifestyle/LinenSummerBlazer.jpg', description: 'Breathable fabric perfect for warm days.' },
+  { id: 'w2', name: 'Tailored Trousers', category: 'Western', image: '/lifestyle/TailoredTrousers.jpg', description: 'High-waisted cut with a modern silhouette.' },
+  { id: 'w3', name: 'Evening Gown', category: 'Western', image: '/lifestyle/EveningGown.jpg', description: 'Floor-length dress in midnight blue.' },
+  { id: 'w4', name: 'Structured Coat', category: 'Western', image: '/lifestyle/StructuredCoat.jpg', description: 'Wool blend coat for winter elegance.' },
 ];
 
 

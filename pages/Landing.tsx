@@ -3,15 +3,15 @@ import { Slideshow } from '../components/Slideshow';
 import { SlideData } from '../types';
 
 const lifestyleSlides: SlideData[] = [
-  { id: 1, image: 'public/lifestyle/LandingImage.jpg', title: 'Elegant Evening', subtitle: 'Fashion Jewelry & Accessories' },
-  { id: 2, image: 'public/lifestyle/ClothesHanger.jpg', title: 'Western Chic', subtitle: 'Modern Garments' },
-  { id: 3, image: 'public/lifestyle/indiangarment.jpg', title: 'Traditional Grace', subtitle: 'Indian Heritage' },
+  { id: 1, image: '/lifestyle/LandingImage.jpg', title: 'Elegant Evening', subtitle: 'Fashion Jewelry & Accessories' },
+  { id: 2, image: '/lifestyle/ClothesHanger.jpg', title: 'Western Chic', subtitle: 'Modern Garments' },
+  { id: 3, image: '/lifestyle/indiangarment.jpg', title: 'Traditional Grace', subtitle: 'Indian Heritage' },
 ];
 
 const beauwellSlides: SlideData[] = [
-  { id: 1, image: 'public/beauwell/SerenuPro.jpg', title: 'Pure Radiance', subtitle: 'Clinically Proven Skincare' },
-  { id: 2, image: 'public/beauwell/nutritionimage.png', title: 'Inner Balance', subtitle: 'Nutritional Wellness' },
-  { id: 3, image: 'public/beauwell/advancedformulations.jpg', title: 'Science of Beauty', subtitle: 'Award Winning Skincare Technology' },
+  { id: 1, image: '/beauwell/SerenuPro.jpg', title: 'Pure Radiance', subtitle: 'Clinically Proven Skincare' },
+  { id: 2, image: '/beauwell/nutritionimage.png', title: 'Inner Balance', subtitle: 'Nutritional Wellness' },
+  { id: 3, image: '/beauwell/advancedformulations.jpg', title: 'Science of Beauty', subtitle: 'Award Winning Skincare Technology' },
 ];
 
 export const Landing: React.FC = () => {
