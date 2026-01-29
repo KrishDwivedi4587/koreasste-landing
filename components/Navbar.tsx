@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
           <Link to="/" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">About</Link>
           <Link to="/lifestyle" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Lifestyle</Link>
-          <Link to="/beauwell" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">BEAUWELL</Link>
+          <Link to="/beauwell" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">NU SKIN</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Contact</Link>
         </div>
       </div>
