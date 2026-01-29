@@ -4,17 +4,17 @@ import { Product } from '../types';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const skincare: Product[] = [
-  { id: 's1', name: 'AgeLOC Transformation', category: 'Skincare', image: 'public/beauwell/AgeLOC.png', description: 'Premier anti-aging system by NuSkin.' },
-  { id: 's2', name: 'LumiSpa iO', category: 'Skincare', image: 'public/beauwell/LumiSpaIO.jpg', description: 'Smart facial cleansing device for skin renewal.' },
-  { id: 's3', name: 'Galvanic Spa', category: 'Skincare', image: 'public/beauwell/GlavanicSpa.jpg', description: 'Ultimate age-defying home spa system.' },
-  { id: 's4', name: 'Prysm iO', category: 'Skincare', image: 'public/beauwell/PrysmIO.jpg', description: 'Cutting-edge tool that non-invasively measures skin carotenoid levels.' },
+  { id: 's1', name: 'AgeLOC Transformation', category: 'Skincare', image: '/beauwell/AgeLOC.png', description: 'Premier anti-aging system by NuSkin.' },
+  { id: 's2', name: 'LumiSpa iO', category: 'Skincare', image: '/beauwell/LumiSpaIO.jpg', description: 'Smart facial cleansing device for skin renewal.' },
+  { id: 's3', name: 'Galvanic Spa', category: 'Skincare', image: '/beauwell/GlavanicSpa.jpg', description: 'Ultimate age-defying home spa system.' },
+  { id: 's4', name: 'Prysm iO', category: 'Skincare', image: '/beauwell/PrysmIO.jpg', description: 'Cutting-edge tool that non-invasively measures skin carotenoid levels.' },
 ];
 
 const nutrition: Product[] = [
-  { id: 'n1', name: 'LifePak Elements', category: 'Nutrition', image: 'public/beauwell/LifePakElements.png', description: 'Prysm iO approved comprehensive multivitamin and mineral supplement.' },
-  { id: 'n2', name: 'Optimum Omega', category: 'Nutrition', image: 'public/beauwell/OptimumOmega.png', description: 'Give your body the Omega-3 support it needs with Optimum Omega.' },
-  { id: 'n3', name: 'TRME Meal Balance', category: 'Nutrition', image: 'public/beauwell/MeaBalance.png', description: 'Satisfying nutrition anytime with MEAL BALANCE.' },
-  { id: 'n4', name: 'Complete TRME Range', category: 'Nutrition', image: 'public/beauwell/TRME.png', description: 'High Nutrition Weight Management Programme.' },
+  { id: 'n1', name: 'LifePak Elements', category: 'Nutrition', image: '/beauwell/LifePakElements.png', description: 'Prysm iO approved comprehensive multivitamin and mineral supplement.' },
+  { id: 'n2', name: 'Optimum Omega', category: 'Nutrition', image: '/beauwell/OptimumOmega.png', description: 'Give your body the Omega-3 support it needs with Optimum Omega.' },
+  { id: 'n3', name: 'TRME Meal Balance', category: 'Nutrition', image: '/beauwell/MeaBalance.png', description: 'Satisfying nutrition anytime with MEAL BALANCE.' },
+  { id: 'n4', name: 'Complete TRME Range', category: 'Nutrition', image: '/beauwell/TRME.png', description: 'High Nutrition Weight Management Programme.' },
 ];
 
 export const Beauwell: React.FC = () => {
