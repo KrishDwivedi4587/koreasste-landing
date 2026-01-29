@@ -35,8 +35,8 @@ export const Landing: React.FC = () => {
         <Slideshow 
           slides={beauwellSlides} 
           id="beauwell-slider"
-          overlayTitle="BEAUWELL"
-          ctaText="Explore BEAUWELL"
+          overlayTitle="Nu Skin"
+          ctaText="Explore Nu Skin"
           ctaLink="/beauwell"
           theme="dark"
         />

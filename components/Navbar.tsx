@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
               Lifestyle
             </Link>
             <Link to="/beauwell" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
-              BEAUWELL
+              Nu Skin
             </Link>
             <Link to="/contact" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
               Contact
