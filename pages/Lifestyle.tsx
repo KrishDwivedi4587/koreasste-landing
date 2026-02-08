@@ -26,15 +26,6 @@ const indianWear: Product[] = [
 ];
 
 
-const westernWear: Product[] = [
-  { id: 'w1', name: 'Linen Summer Blazer', category: 'Western', image: '/lifestyle/LinenSummerBlazer.jpg', description: 'Breathable fabric perfect for warm days.' },
-  { id: 'w2', name: 'Tailored Trousers', category: 'Western', image: '/lifestyle/TailoredTrousers.jpg', description: 'High-waisted cut with a modern silhouette.' },
-  { id: 'w3', name: 'Evening Gown', category: 'Western', image: '/lifestyle/EveningGown.jpg', description: 'Floor-length dress in midnight blue.' },
-  { id: 'w4', name: 'Structured Coat', category: 'Western', image: '/lifestyle/StructuredCoat.jpg', description: 'Wool blend coat for winter elegance.' },
-];
-
-
-
 export const Lifestyle: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -90,13 +81,6 @@ export const Lifestyle: React.FC = () => {
         />
 
       </div>
-
-      <ProductGrid 
-        title="Western Wear" 
-        description="Modern silhouettes meeting classic tailoring."
-        products={westernWear}
-        theme="lifestyle"
-      />
 
     </div>
   );

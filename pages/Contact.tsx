@@ -14,10 +14,10 @@ export const Contact: React.FC = () => {
       <div className="relative z-10 max-w-[90rem] w-full px-6 py-20 text-center">
         <h1 className="font-serif text-6xl md:text-7xl text-gray-900 mb-8 tracking-tight">Contact</h1>
         <p className="font-sans text-lg md:text-xl text-gray-500 mb-20 max-w-2xl mx-auto leading-relaxed tracking-wide">
-          We are here to assist you with any inquiries regarding our Lifestyle collections or BEAUWELL products.
+          We're here to assist you with any inquiries about our Lifestyle Collections, BEAUWELL products, or NutriForm plans.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-32 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32 items-stretch mx-auto max-w-5xl">
             {/* Email Card - Static for Copy/Paste */}
             <div className="group flex flex-col items-center p-8 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 rounded-lg border border-gray-100">
                 <div className="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center mb-6 group-hover:bg-koreasste-gold/10 transition-colors duration-500 shrink-0">
@@ -27,29 +27,9 @@ export const Contact: React.FC = () => {
                 
                 <div className="flex flex-col items-center justify-center flex-grow">
                     <span className="text-gray-600 font-sans text-lg group-hover:text-koreasste-gold transition-colors duration-300 select-all">
-                        team@koreasste.in
+                        team (at) koreasste dot in
                     </span>
                     <span className="text-xs text-gray-400 mt-2">General Inquiries</span>
-                </div>
-            </div>
-
-            {/* Phone Card */}
-            <div className="group flex flex-col items-center p-8 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 rounded-lg border border-gray-100">
-                <div className="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center mb-6 group-hover:bg-koreasste-gold/10 transition-colors duration-500 shrink-0">
-                    <Phone className="w-6 h-6 text-gray-700 group-hover:text-koreasste-gold transition-colors duration-500" />
-                </div>
-                <h3 className="font-serif text-2xl mb-6 text-gray-900 shrink-0">Phone</h3>
-                
-                <div className="flex flex-col w-full space-y-5 flex-grow justify-center">
-                    <div className="flex flex-col items-center group/item">
-                        <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1 group-hover/item:text-koreasste-gold transition-colors">Lifestyle</span>
-                        <span className="text-gray-600 font-sans text-sm md:text-base">+91 9313 232 404</span>
-                    </div>
-                    <div className="w-16 h-px bg-gray-100 mx-auto"></div>
-                    <div className="flex flex-col items-center group/item">
-                        <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1 group-hover/item:text-beauwell-sage transition-colors">Beauwell</span>
-                        <span className="text-gray-600 font-sans text-sm md:text-base">+91 6352 432 404</span>
-                    </div>
                 </div>
             </div>
 

@@ -7,6 +7,7 @@ import { Lifestyle } from './pages/Lifestyle';
 import { Beauwell } from './pages/Beauwell';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
+import { ArhanSiam } from './pages/ArhanSiam';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/beauwell" element={<Beauwell />} />
+            <Route path="/arhansiam" element={<ArhanSiam />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

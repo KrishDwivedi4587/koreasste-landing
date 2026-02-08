@@ -16,13 +16,14 @@ export const Footer: React.FC = () => {
           <h4 className="font-sans uppercase text-sm font-bold tracking-widest mb-6 text-gray-500">Brands</h4>
           <ul className="space-y-4 text-base text-gray-300">
             <li><Link to="/lifestyle" className="hover:text-koreasste-gold transition-colors">Koreasste</Link></li>
-            <li><Link to="/beauwell" className="hover:text-beauwell-sage transition-colors">Nu Skin</Link></li>
+            <li><Link to="/beauwell" className="hover:text-beauwell-sage transition-colors">BEAUWELL</Link></li>
+            <li><Link to="/arhansiam" className="hover:text-arhansiam-clay transition-colors">NutriForm</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-sans uppercase text-sm font-bold tracking-widest mb-6 text-gray-500">Contact</h4>
-          <Link to="/contact" className="text-base text-gray-300 hover:text-white transition-colors">
-            Feel free to reach out to us!
+          <Link to="/contact" className="text-base text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-white">
+            Reach out to us
           </Link>
         </div>
       </div>

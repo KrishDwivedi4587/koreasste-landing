@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingBag } from 'lucide-react';
-import { BrandTheme } from '../types';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +8,7 @@ export const Navbar: React.FC = () => {
 
   const isLifestyle = location.pathname.includes('lifestyle');
   const isBeauwell = location.pathname.includes('beauwell');
+  const isArhanSiam = location.pathname.includes('arhansiam');
 
   let navBg = 'bg-white/95 backdrop-blur-md border-b border-gray-100';
   let linkHover = 'hover:text-gray-600';
@@ -22,16 +22,20 @@ export const Navbar: React.FC = () => {
     navBg = 'bg-white/95 backdrop-blur-md border-b border-teal-50';
     linkHover = 'hover:text-beauwell-sage';
     brandColor = 'text-beauwell-slate';
+  } else if (isArhanSiam) {
+    navBg = 'bg-[#FDF8F3]/95 backdrop-blur-md border-b border-orange-100';
+    linkHover = 'hover:text-arhansiam-clay';
+    brandColor = 'text-arhansiam-moss';
   }
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className={`fixed w-full z-50 transition-colors duration-300 ${navBg}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
+        <div className="flex justify-between h-24 items-center">
           
-          {/* Logo & Brand Name */}
+          {/* Logo & Brand Name - Default Home Link */}
           <Link to="/" className="flex items-center space-x-4 group">
             <div className="w-14 h-14 md:w-16 md:h-16 overflow-hidden rounded-full border border-gray-200 shadow-sm flex-shrink-0 transition-transform duration-300">
               <img 
@@ -46,10 +50,7 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-12 items-center">
-            <Link to="/" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
-              Home
-            </Link>
+          <div className="hidden md:flex space-x-10 lg:space-x-12 items-center">
             <Link to="/about" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
               About
             </Link>
@@ -57,7 +58,10 @@ export const Navbar: React.FC = () => {
               Lifestyle
             </Link>
             <Link to="/beauwell" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
-              Nu Skin
+              BEAUWELL
+            </Link>
+            <Link to="/arhansiam" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
+              NutriForm
             </Link>
             <Link to="/contact" className={`font-sans text-base font-medium tracking-widest uppercase transition-colors ${brandColor} ${linkHover}`}>
               Contact
@@ -66,21 +70,21 @@ export const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className={`${brandColor} focus:outline-none`}>
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            <button onClick={toggleMenu} className={`${brandColor} focus:outline-none transition-transform active:scale-90`}>
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Nav */}
-      <div className={`md:hidden absolute top-20 left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}>
-        <div className="px-4 pt-4 pb-8 space-y-4 flex flex-col items-center">
-          <Link to="/" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Home</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">About</Link>
-          <Link to="/lifestyle" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Lifestyle</Link>
-          <Link to="/beauwell" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">NU SKIN</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="block py-3 text-base font-medium uppercase tracking-widest text-gray-800">Contact</Link>
+      {/* Mobile Nav Overlay */}
+      <div className={`md:hidden absolute top-24 left-0 w-full bg-white shadow-2xl border-t border-gray-100 transition-all duration-500 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}>
+        <div className="px-6 py-10 space-y-6 flex flex-col items-center">
+          <Link to="/about" onClick={() => setIsOpen(false)} className="block font-sans text-base font-medium uppercase tracking-widest text-gray-800 hover:text-koreasste-gold transition-colors">About</Link>
+          <Link to="/lifestyle" onClick={() => setIsOpen(false)} className="block font-sans text-base font-medium uppercase tracking-widest text-gray-800 hover:text-koreasste-gold transition-colors">Lifestyle</Link>
+          <Link to="/beauwell" onClick={() => setIsOpen(false)} className="block font-sans text-base font-medium uppercase tracking-widest text-gray-800 hover:text-koreasste-gold transition-colors">BEAUWELL</Link>
+          <Link to="/arhansiam" onClick={() => setIsOpen(false)} className="block font-sans text-base font-medium uppercase tracking-widest text-gray-800 hover:text-koreasste-gold transition-colors">NUTRIFORM</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="block font-sans text-base font-medium uppercase tracking-widest text-gray-800 hover:text-koreasste-gold transition-colors">Contact</Link>
         </div>
       </div>
     </nav>

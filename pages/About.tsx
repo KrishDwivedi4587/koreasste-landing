@@ -107,6 +107,30 @@ export const About: React.FC = () => {
                   </div>
                 </FadeInSection>
 
+                {/* ArhanSiam */}
+                <FadeInSection>
+                  <div className="relative group overflow-hidden shadow-lg rounded-sm mt-12 md:mt-0">
+                      <img 
+                          src="/nutrition/ChickpeaSalad.png" 
+                          alt="ArhanSiam Culinary" 
+                          className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                  </div>
+                </FadeInSection>
+
+                <FadeInSection delay="200ms">
+                  <div className="md:pl-8 text-center md:text-left mt-12 md:mt-0">
+                      <h3 className="font-serif text-4xl text-arhansiam-moss mb-6">Koreasste - NutriForm</h3>
+                      <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                          NutriForm is our culinary sanctuary where nourishment meets gastronomy. We believe that the ingredients you choose today become the cells that sustain you tomorrow. Our recipes and dietary protocols are designed to harmonize the body's natural metabolic processes.
+                      </p>
+                      <p className="font-sans text-sm font-bold uppercase tracking-widest text-arhansiam-clay">
+                          Nourishing • Balanced • Vitality
+                      </p>
+                  </div>
+                </FadeInSection>
+
             </div>
         </div>
       </section>
@@ -117,7 +141,7 @@ export const About: React.FC = () => {
           <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-4xl mb-8 text-gray-900">Our Commitment</h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-12">
-                  Whether you are choosing a statement necklace or a rejuvenating serum, our promise remains the same: uncompromising quality and a dedication to enhancing your life.
+                  Whether you are choosing a statement accessory, a rejuvenating serum, or a metabolic diet plan, our promise remains the same: uncompromising quality and a dedication to enhancing your life through holistic excellence.
               </p>
           </div>
         </FadeInSection>

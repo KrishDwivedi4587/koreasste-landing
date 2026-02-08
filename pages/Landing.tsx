@@ -3,27 +3,33 @@ import { Slideshow } from '../components/Slideshow';
 import { SlideData } from '../types';
 
 const lifestyleSlides: SlideData[] = [
-  { id: 1, image: '/lifestyle/LandingImage.jpg', title: 'Elegant Evening', subtitle: 'Fashion Jewelry & Accessories' },
-  { id: 2, image: '/lifestyle/ClothesHanger.jpg', title: 'Western Chic', subtitle: 'Modern Garments' },
+  { id: 1, image: '/lifestyle/LandingImage.jpg', title: 'Elegant Evening', subtitle: 'Fashion Jewelry' },
+  { id: 2, image: '/lifestyle/StatementBelt.jpg', title: 'Accessories', subtitle: 'Accessorize to Style' },
   { id: 3, image: '/lifestyle/indiangarment.jpg', title: 'Traditional Grace', subtitle: 'Indian Heritage' },
 ];
 
 const beauwellSlides: SlideData[] = [
-  { id: 1, image: '/beauwell/SerenuPro.jpg', title: 'Pure Radiance', subtitle: 'Clinically Proven Skincare' },
-  { id: 2, image: '/beauwell/nutritionimage.png', title: 'Inner Balance', subtitle: 'Nutritional Wellness' },
-  { id: 3, image: '/beauwell/advancedformulations.jpg', title: 'Science of Beauty', subtitle: 'Award Winning Skincare Technology' },
+  { id: 1, image: '/beauwell/SerenuPro.jpg', title: 'Pure Radiance', subtitle: 'Presents: Clinically Proven Skincare' },
+  { id: 2, image: '/beauwell/nutritionlanding.jpg', title: 'Inner Balance', subtitle: 'Presents: Nutritional Wellness' },
+  { id: 3, image: '/beauwell/advancedformulations.jpg', title: 'Science of Beauty', subtitle: 'Presents: Award Winning Skincare Technology' },
+];
+
+const arhansiamSlides: SlideData[] = [
+  { id: 1, image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800&h=1200', title: '', subtitle: 'Nutritious Recipes' },
+  { id: 2, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800&h=1200', title: '', subtitle: 'Cleansing Blends' },
+  { id: 3, image: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80&w=800&h=1200', title: '', subtitle: 'Dietary Foundations' },
 ];
 
 export const Landing: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row h-screen w-full pt-20 lg:pt-0">
+    <div className="flex flex-col lg:flex-row h-screen w-full pt-24 lg:pt-0 overflow-hidden">
       
       {/* Lifestyle Section */}
-      <div className="w-full lg:w-1/2 h-[50vh] lg:h-full relative border-b-4 lg:border-b-0 lg:border-r-4 border-white">
+      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
         <Slideshow 
           slides={lifestyleSlides} 
           id="lifestyle-slider"
-          overlayTitle="KOREASSTE"
+          overlayTitle="LIFESTYLE"
           ctaText="Explore Lifestyle"
           ctaLink="/lifestyle"
           theme="dark"
@@ -31,13 +37,25 @@ export const Landing: React.FC = () => {
       </div>
 
       {/* Beauwell Section */}
-      <div className="w-full lg:w-1/2 h-[50vh] lg:h-full relative">
+      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
         <Slideshow 
           slides={beauwellSlides} 
           id="beauwell-slider"
-          overlayTitle="NU SKIN"
-          ctaText="Explore Nu Skin"
+          overlayTitle="BEAUWELL"
+          ctaText="Explore NuSkin & PharmaNex"
           ctaLink="/beauwell"
+          theme="dark"
+        />
+      </div>
+
+      {/* ArhanSiam Section */}
+      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative">
+        <Slideshow 
+          slides={arhansiamSlides} 
+          id="arhansiam-slider"
+          overlayTitle="NUTRIFORM"
+          ctaText="Explore NutriForm"
+          ctaLink="/arhansiam"
           theme="dark"
         />
       </div>
