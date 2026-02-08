@@ -22,9 +22,14 @@ export const Footer: React.FC = () => {
         </div>
         <div>
           <h4 className="font-sans uppercase text-sm font-bold tracking-widest mb-6 text-gray-500">Contact</h4>
-          <Link to="/contact" className="text-base text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-white">
-            Reach out to us
-          </Link>
+          <div className="space-y-4">
+            <Link to="/contact" className="text-base text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-white block">
+              Reach Out to Us!
+            </Link>
+            <a href="https://nskn.co/6w3P9W" target="_blank" rel="noopener noreferrer" className="text-base text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 hover:decoration-white block">
+              Business Opportunity
+            </a>
+          </div>
         </div>
       </div>
       <div className="mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">

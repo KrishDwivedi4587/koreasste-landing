@@ -54,9 +54,9 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
               <h3 className={`font-serif text-xl font-semibold mb-2 ${headingColor} group-hover:opacity-80 transition-opacity`}>
                 {product.name}
               </h3>
-              <p className="text-base text-gray-600 line-clamp-2 leading-relaxed">
+              <div className="text-base text-gray-600 line-clamp-2 leading-relaxed">
                 {product.description}
-              </p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Mail, Phone, Instagram, Facebook, Youtube, MessageCircle } from 'lucide-react';
+import { Mail, Phone, Instagram, Facebook, Youtube, MessageCircle, Link as LinkIcon } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   useEffect(() => {
@@ -79,6 +79,7 @@ export const Contact: React.FC = () => {
             <SocialLink href="https://www.instagram.com/koreasste" icon={<Instagram size={36} />} label="Instagram" />
             <SocialLink href="https://www.facebook.com/people/Nu-Skin-Koreasste/61585379076302/" icon={<Facebook size={36} />} label="Facebook" />
             <SocialLink href="https://www.youtube.com/@KoreassteBeauWell" icon={<Youtube size={36} />} label="YouTube" />
+            <SocialLink href="https://linktr.ee/koreasste" icon={<LinkIcon size={36} />} label="Linktree" />
         </div>
 
       </div>

@@ -7,7 +7,7 @@ const skincare: Product[] = [
   { id: 's1', name: 'genLOC Transformation', category: 'Skincare', image: '/beauwell/AgeLOC.png', description: 'Premier anti-aging system by NuSkin.' },
   { id: 's2', name: 'LumiSpa iO', category: 'Skincare', image: '/beauwell/LumiSpaIO.jpg', description: 'Smart facial cleansing device for skin renewal.' },
   { id: 's3', name: 'Galvanic Spa', category: 'Skincare', image: '/beauwell/GlavanicSpa.jpg', description: 'Ultimate age-defying home spa system.' },
-  { id: 's4', name: 'Serenu Professional', category: 'Skincare', image: '/beauwell/test1.jpg', description: 'Professional skincare range proudly made in India.' },
+  { id: 's4', name: 'Serenu Professional', category: 'Skincare', image: '/beauwell/test1.jpg', description: <>Professional skincare range proudly <strong>Made in India</strong>.</> },
 ];
 
 const nutrition: Product[] = [
@@ -44,7 +44,7 @@ export const Beauwell: React.FC = () => {
 
       <div ref={introRef} className={`max-w-4xl mx-auto px-6 py-16 text-center transition-all duration-1000 delay-500 transform ${introVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
          <p className="text-gray-700 text-xl font-normal leading-relaxed">
-           Discover our curated selection of premium wellness products. We at BEAUWELL have proudly partnered with <strong className="text-2xl">NuSkin</strong> and <strong className="text-2xl">PharmaNex</strong> to bring you the finest in science and nature.
+           Discover our curated selection of premium wellness products. We at BEAUWELL have proudly partnered with <strong className="text-2xl">NuSkin®</strong> and <strong className="text-2xl">PharmaNex</strong> to bring you the finest in science and nature.
          </p>
          <div className={`h-0.5 bg-beauwell-sage mx-auto mt-8 transition-all duration-1000 delay-700 ${introVisible ? 'w-16 opacity-100' : 'w-0 opacity-0'}`}></div>
       </div>
