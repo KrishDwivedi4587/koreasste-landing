@@ -75,14 +75,14 @@ export const Slideshow: React.FC<SlideshowProps> = ({
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-8 z-10 pointer-events-none">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-5 pt-5 pb-12 md:p-8 z-10 pointer-events-none">
         <div className="pointer-events-auto flex flex-col items-center max-w-4xl">
-            <h2 className={`font-serif text-3xl md:text-5xl lg:text-6xl mb-4 tracking-tight transition-all duration-700 ${
+            <h2 className={`font-serif text-2xl md:text-5xl lg:text-6xl mb-2 md:mb-4 tracking-tight transition-all duration-700 ${
               theme === 'dark' ? 'text-white' : 'text-arhansiam-moss'
             }`}>
               {displayTitle}
             </h2>
-            <p className={`font-sans text-sm md:text-base tracking-widest uppercase mb-8 font-medium leading-relaxed max-w-2xl transition-all duration-700 delay-100 ${
+            <p className={`font-sans text-[0.65rem] md:text-base tracking-widest uppercase mb-4 md:mb-8 font-medium leading-relaxed max-w-2xl transition-all duration-700 delay-100 ${
               theme === 'dark' ? 'text-white/90 drop-shadow-md' : 'text-arhansiam-clay'
             }`}>
               {currentSlide.subtitle}
@@ -92,9 +92,9 @@ export const Slideshow: React.FC<SlideshowProps> = ({
               <Link 
                 to={ctaLink}
                 className={`
-                    px-8 py-3 
+                    px-5 py-2 md:px-8 md:py-3
                     border-2 transition-all duration-300
-                    font-sans text-xs font-bold uppercase tracking-widest
+                    font-sans text-[0.65rem] md:text-xs font-bold uppercase tracking-widest
                     ${theme === 'dark' 
                     ? 'border-white text-white hover:bg-white hover:text-black' 
                     : 'border-arhansiam-moss text-arhansiam-moss hover:bg-arhansiam-moss hover:text-white'}
@@ -128,7 +128,7 @@ export const Slideshow: React.FC<SlideshowProps> = ({
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, idx) => (
           <button
             key={idx}
