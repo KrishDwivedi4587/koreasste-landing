@@ -22,10 +22,10 @@ const arhansiamSlides: SlideData[] = [
 
 export const Landing: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row h-screen w-full pt-24 lg:pt-0 overflow-hidden">
+    <div className="flex flex-col lg:flex-row w-full mt-24 lg:mt-0 min-h-[calc(100svh-6rem)] lg:h-screen overflow-visible lg:overflow-hidden">
       
       {/* Lifestyle Section */}
-      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
+      <div className="w-full lg:w-1/3 h-[calc((100svh-6rem)/3)] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
         <Slideshow 
           slides={lifestyleSlides} 
           id="lifestyle-slider"
@@ -37,7 +37,7 @@ export const Landing: React.FC = () => {
       </div>
 
       {/* Beauwell Section */}
-      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
+      <div className="w-full lg:w-1/3 h-[calc((100svh-6rem)/3)] lg:h-full relative border-b lg:border-b-0 lg:border-r border-white/20">
         <Slideshow 
           slides={beauwellSlides} 
           id="beauwell-slider"
@@ -49,7 +49,7 @@ export const Landing: React.FC = () => {
       </div>
 
       {/* ArhanSiam Section */}
-      <div className="w-full lg:w-1/3 h-[33.33vh] lg:h-full relative">
+      <div className="w-full lg:w-1/3 h-[calc((100svh-6rem)/3)] lg:h-full relative">
         <Slideshow 
           slides={arhansiamSlides} 
           id="arhansiam-slider"
